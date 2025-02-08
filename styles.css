@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #eef;
+    padding: 15px;
+    width: 22%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* About Section with Background Image */
+#about {
+    background: url('images/back.png') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+#portfolio {
+    background-image: url('images/cover.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Social Media Logo Styling */
+.social-logo {
+    width: 40px;
+    margin: 0 10px;
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+#chatbot-toggle {
+    background: #5b2a82;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#chatbot-window {
+    background: white;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+#chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
